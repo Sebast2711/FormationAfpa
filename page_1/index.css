@@ -1,0 +1,19 @@
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+
+  background-color: black;
+  color: white;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+
+  background-color: lightgreen;
+  width: 100%;
+
+  color: black;
+  text-align: center;
+}

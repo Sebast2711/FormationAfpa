@@ -2,29 +2,25 @@ body {
   margin:0;
   padding:0;
   height:100%;
-
-  background-color: black;
-  color: white;
-
+}
+img {
+  height: 250px;
+  width: 350px;
 }
 
 
-
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: lightgreen;
-  width: 100%;
-
-  color: black;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 33%;
   text-align: center;
+  margin: 25px 33%;
 }
 
-dt {
-  border: 1px solid aqua;
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-dd {
-  border:solid blueviolet 3px;
+.container {
+  padding: 2px 16px;
 }

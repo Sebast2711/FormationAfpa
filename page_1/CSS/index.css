@@ -1,0 +1,30 @@
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+
+  background-color: black;
+  color: white;
+
+}
+
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: lightgreen;
+  width: 100%;
+
+  color: black;
+  text-align: center;
+}
+
+dt {
+  border: 1px solid aqua;
+}
+
+dd {
+  border:solid blueviolet 3px;
+}

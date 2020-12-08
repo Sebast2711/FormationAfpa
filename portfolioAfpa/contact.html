@@ -9,26 +9,77 @@
 
     <h2 id="Contact" >Envoyez moi un message</h2>
 
+  <section class="formulaire">
     <form class="" action="index.html" method="post">
+      <div>
+        <div>
+          <input type="radio" name="choix" value="Monsieur" checked >
+          <label > Monsieur</label>
+        </div>
+        <div>
+            <input type="radio" name="choix" value="Madame">
+            <label > Madame</label>
+        </div>
+        <div>
+          <input type="radio" name="choix" value="Mademoiselle" >
+          <label > Mademoiselle</label>
+        </div>
+      </div>
+      <div>
+        <label>Nom</label>
+        <input type="text" name="Nom" value="" required placeholder="Nom"><br>
+      </div>
+      <div>
+        <label>Prenom</label>
+        <input type="text" name="Prenom" value="" required placeholder="Prenom"><br>
+      </div>
+      <div>
+        <input type="date" name="datedenaissance">
+      </div>
+      <div>
+        <label>Mot de passe</label>
+        <input type="password" name="MDP" placeholder="Mot de passe"><br>
+      </div>
+      <div>
+        <label>Adresse Mail</label>
+        <input type="email" name="Email"  required placeholder="Email"><br>
+      </div>
+      <div>
+        <label>Message</label>
+        <textarea  name="Message"  placeholder="Message"></textarea><br>
+      </div>
+      <div >
+          <select name="selectionAnimal">
+            <optgroup label="Mammifere">
+              <option value="Homme">Homme</option>
+              <option value="Dauphin">Dauphin</option>
+            </optgroup>
+            <optgroup label="Poisson">
+              <option value="Clown">Clown</option>
+              <option value="Requin">Requin</option>
+            </optgroup>
+            <optgroup label="Serpent">
+              <option value="Cobra">Cobra</option>
+              <option value="Cobra">Vipere</option>
+            </optgroup>
+          </select>
+      </div>
 
-      <label>Nom</label>
-      <input type="text" name="Nom" value="" required placeholder="Nom"><br>
-      <label>Prenom</label>
-      <input type="text" name="Prenom" value="" required placeholder="Prenom"><br>
-      <label>Mot de passe</label>
-      <input type="password" name="MDP" value="" placeholder="Mot de passe"><br>
-      <label>Adresse Mail</label>
-      <input type="email" name="Email" value="" required placeholder="Email"><br>
-      <label>Message</label>
-      <input type="textarea" name="Message" value="" placeholder="Message"><br>
+      <div>
+        <input type="range" name="range" value="0" min="0" max="10" step="1">
 
-     <input type="submit" name="Validation" value="Validation">
-     <input type="reset" name="Annulation" value="Annulation">
+      </div>
 
+
+      <div>
+        <input type="submit" name="Validation" value="Validation">
+        <input type="reset" name="Annulation" value="Annulation">
+      </div>
     </form>
+  </section>
 
     <footer>
-      &copy mon-site Dec-2020 All right reserved to Sebastien OILLO
+      &copy; mon-site Dec-2020 All right reserved to Sebastien OILLO
     </footer>
 
   </body>

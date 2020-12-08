@@ -1,0 +1,84 @@
+h1:hover , h2:hover {
+  color: orange;
+}
+
+h2~p {
+  color: red;
+}
+
+h2+p{
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: green;
+}
+
+li:nth-child(5n){
+  color: green;
+}
+
+li:nth-last-child(4n){
+  color: red;
+}
+
+
+
+tbody tr:nth-child(2n){
+background-color: red;
+}
+
+tbody tr:nth-child(2n+1) {
+  background-color: green;
+}
+
+ol{
+  background-color: #9966ff ;
+}
+
+.Pargraphes1 {
+  background-color: #ffff66;
+}
+
+.Pargraphes1 p {
+  text-align: justify;
+  word-spacing: -0.5em;
+}
+
+.Pargraphes2 {
+  background-color: #9966ff ;
+}
+
+
+.Pargraphes2 h2{
+  text-shadow: 2px -1px #333333;
+}
+.Pargraphes2 h2:hover{
+  text-shadow: 5px -3px #805300;
+}
+
+#Faux {
+  text-align: right;
+  text-decoration-line: line-through;
+  color: black;
+}
+
+#oblique {
+  font-style: oblique;
+}
+
+#ita {
+  font-style: italic;
+}
+
+
+
+
+
+table {
+  border: #ff0fff solid 2px;
+  background-color: #99ff44;
+}

@@ -11,8 +11,9 @@
 
   <section class="formulaire">
     <form class="" action="index.html" method="post">
-      <div>
-        <div>
+
+      <div class="champs radiobutton">
+        <div >
           <input type="radio" name="choix" value="Monsieur" checked >
           <label > Monsieur</label>
         </div>
@@ -25,61 +26,52 @@
           <label > Mademoiselle</label>
         </div>
       </div>
-      <div>
-        <label>Nom</label>
-        <input type="text" name="Nom" value="" required placeholder="Nom"><br>
-      </div>
-      <div>
-        <label>Prenom</label>
-        <input type="text" name="Prenom" value="" required placeholder="Prenom"><br>
-      </div>
-      <div>
-        <input type="date" name="datedenaissance">
-      </div>
-      <div>
-        <label>Mot de passe</label>
-        <input type="password" name="MDP" placeholder="Mot de passe"><br>
-      </div>
-      <div>
-        <label>Adresse Mail</label>
-        <input type="email" name="Email"  required placeholder="Email"><br>
-      </div>
-      <div>
-        <label>Message</label>
-        <textarea  name="Message"  placeholder="Message"></textarea><br>
-      </div>
-      <div >
-          <select name="selectionAnimal">
-            <optgroup label="Mammifere">
-              <option value="Homme">Homme</option>
-              <option value="Dauphin">Dauphin</option>
-            </optgroup>
-            <optgroup label="Poisson">
-              <option value="Clown">Clown</option>
-              <option value="Requin">Requin</option>
-            </optgroup>
-            <optgroup label="Serpent">
-              <option value="Cobra">Cobra</option>
-              <option value="Cobra">Vipere</option>
-            </optgroup>
-          </select>
+
+
+      <div class="champs">
+        <label class="obligatoire">Nom :</label>
+        <input class="champs2" type="text" name="Nom" value="" required placeholder="Nom"><br>
       </div>
 
-      <div>
-        <input type="range" name="range" value="0" min="0" max="10" step="1">
+      <div class="champs">
+        <label class="obligatoire">Prenom :</label>
+        <input class="champs2" type="text" name="Prenom" value="" required placeholder="Prenom"><br>
+      </div>
 
+      <div class="champs">
+        <label> Date de naissance : </label>
+        <input class="ddn" type="date" name="datedenaissance">
+      </div>
+
+      <div class="champs">
+        <label class="obligatoire"> Adresse Mail :</label>
+        <input class="champs2" type="email" name="Email" autocomplete=""  required placeholder="Email"><br>
+      </div>
+
+      <div class="champs">
+        <label class="obligatoire"> Mot de passe :</label>
+        <input class="champs2" type="password" minlength="6" autocomplete="" name="mdp" placeholder="Mot de passe" required><br>
+      </div>
+
+      <div class="champs">
+        <label class="obligatoire"> Message :</label>
+        <textarea class="champs2" rows="3" name="Message" maxlength="150" required placeholder="Message"></textarea><br>
       </div>
 
 
-      <div>
-        <input type="submit" name="Validation" value="Validation">
-        <input type="reset" name="Annulation" value="Annulation">
+      <div class="test">
+        <input class="bouton" type="submit" name="Validation" value="Validation">
+        <input class="bouton" type="reset" name="Annulation" value="Annulation">
       </div>
     </form>
+
+    <p  > Les champs précédés de <span class="obligatoire"></span> sont des champs obligatoire </p>
   </section>
 
+
+
     <footer>
-      &copy; mon-site Dec-2020 All right reserved to Sebastien OILLO
+      <p> mon-site &copy; Dec-2020 - Sébastien OILLO </p>
     </footer>
 
   </body>

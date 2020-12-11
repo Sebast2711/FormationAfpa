@@ -1,4 +1,73 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
 body{
   background-color: black;
+  color:white;
+}
+
+.formulaire {
+  width: 50%;
+  margin: auto;
+}
+
+form {
+  background: linear-gradient(0.25turn, #3F87A6, #EBF8E1, #F69D3C );
+  text-align: center;
+  padding: 1rem;
+  color: black;
+  text-shadow: 1px 1px grey;
+}
+
+.radiobutton div{
+  display: inline;
+}
+
+.champs {
+  margin: 1rem;
+}
+
+label {
+  margin: 20px;
+}
+
+.obligatoire::before {
+  content: "*  ";
+  color: red;
+}
+
+
+.champs2, .ddn {
+  background-color: black;
+  border: none;
+  border-bottom: 1px solid white ;
   color: white;
+}
+.champs2:hover, .ddn:hover{
+  border: 3px blue solid;
+}
+
+
+
+.bouton{
+  padding: 0.5rem;
+  border-radius: 15px;
+  width: auto ;
+  margin: 2rem;
+}
+
+.bouton:hover {
+  border: 1px white solid;
+  box-shadow: 0.5rem 0.5rem lightblue inset;
+}
+
+
+
+footer{
+  background-color: #1D1D1D;
+  text-align:center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }

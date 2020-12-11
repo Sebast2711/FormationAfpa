@@ -14,9 +14,9 @@ body{
 
 form {
   background: linear-gradient(0.25turn, #3F87A6, #EBF8E1, #F69D3C );
-  text-align: center;
   padding: 1rem;
   color: black;
+  text-align: center;
   text-shadow: 1px 1px grey;
 }
 
@@ -70,4 +70,10 @@ footer{
   position: fixed;
   bottom: 0px;
   width: 100%;
+}
+
+
+
+.form2 div{
+  display: inline;
 }

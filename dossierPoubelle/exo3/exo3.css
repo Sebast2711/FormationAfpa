@@ -1,0 +1,56 @@
+div {
+	margin: 2rem 0px;
+	text-align: center;
+	border: 2px solid black;
+	width: 80%;
+	height: 40px;
+	background-color: lightblue;
+}
+ 
+@keyframes couleur {
+
+	from{
+		background-color: lightblue;
+		transform: rotate(0deg);
+	}
+	25%{
+		transform: rotate(0deg);
+		color: red;
+	}
+	50%{
+		transform: rotate(0deg);
+		color: yellow;
+		background-color: red;
+	}
+	75%{
+		transform: rotate(90deg);
+	}
+	to{
+		transform: rotate(0deg);
+		background-color: lightblue;
+		color :black;
+	}
+}
+
+/*Classe div1*/
+
+.d1{
+
+	animation-name: couleur ;
+	animation-duration: 10s;
+	animation-direction: normal;
+	
+	/* animation-iteration-count: infinite; */
+}
+
+
+/*Classe div2*/
+
+/* .d2 {
+	transition: width 3s, transform 1s ;
+}
+.d2:hover{
+	width: 90%;
+	transform: rotate(90deg);
+
+} */

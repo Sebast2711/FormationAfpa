@@ -5,33 +5,41 @@
 
     <title>Premiere page en html</title>
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+
   </head>
   <body>
 
-    <header>
-      <h1 id="home">OILLO Sebastien</h1>
+    <header class="header" >
+      <h1 class="flex titre" id="home">OILLO Sebastien</h1>
+      
       <hr>
-      <h2>Mon portfolio, pour présenter me projets les plus caractéristiques</h2>
+      <h2 class="flex titre">Portfolio technique</h2> 
+
+      <nav class = "navbar">
+        <ul class="">
+          <li> <a href="#home">Accueil</a> </li>
+          <li> <a href="#projets">Projets</a> </li>
+          <li> <a href="contact.html">Contact</a> </li>
+        </ul>
+      </nav>
     </header>
 
-    <nav>
-      <ul>
-        <li> <a href="#home">Accueil</a> </li>
-        <li> <a href="#projets">Projets</a> </li>
-        <li> <a href="contact.html">Contact</a> </li>
-      </ul>
-    </nav>
+
+
+
 
     <section>
-      <h3>Bienvenue</h3>
+      <h3>Bienvenue sur mon portfolio</h3>
       <p>Developpeur web et web mobile. En formation actuellement.</p>
     </section>
 
 
+    <h3 id="projets">Projets</h3>
     <section id="Projets">
-      <h3 id="projets">Projets</h3>
 
-      <div class="card">
+      <div class="card" onclick="window.open('#') " >
         <img src="IMG/ECOLO.svg" alt="Site sur l'ecologie">
         <hr>
           <div class="container">
@@ -57,6 +65,7 @@
           <p>Description</p>
         </div>
       </div>
+      
     </section>
 
     <section>
@@ -66,7 +75,7 @@
 
 
     <footer>
-      &copy; mon-site Dec-2020 All right reserved to Sebastien OILLO
+      <p> mon-portfolio &copy; Dec-2020 - Sébastien OILLO </p>
     </footer>
 
   </body>

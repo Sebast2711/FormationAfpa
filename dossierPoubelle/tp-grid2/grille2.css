@@ -1,0 +1,78 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Grille */
+.site {
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr ;
+    grid-gap: 10px;
+}
+
+/* Entete */
+.header {
+    grid-row: 1/1 ;
+    grid-column: 1/ span 3;
+    background-color: lightblue;
+
+}
+
+/* Titres */
+h1,h2 {
+    text-align: center;
+}
+
+h1 {
+    text-decoration: underline overline 3px black;
+}
+
+h1::before {
+    content: "~ ";
+}
+
+h1::after {
+    content: " ~";
+}
+
+/* Element central */
+.body {    
+    grid-row: 2/2;
+    grid-column: 2/2 ;
+    background-color:  lightgreen;
+    border: 1px solid green;
+}
+
+
+/* Elemet de droite */
+.right-sidebar {
+
+    grid-row: 2/2 ;
+    grid-column: 3/3 ;
+    background-color: rgb(208, 150, 247);
+    border: 1px solid rgb(236, 9, 225);
+}
+
+/* Elemet de gauche */
+.left-sidebar {
+    grid-row: 2/2 ;
+    grid-column: 1/1;
+    background-color:lightcoral;
+    border: 1px solid  rgb(252, 86, 25);
+}
+
+/* Pied de page */
+.footer{
+    grid-row: 3/3 ;
+    grid-column: 1/span 3 ;
+    background-color: rgb(248, 248, 158);
+    border: 1px solid yellow;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}

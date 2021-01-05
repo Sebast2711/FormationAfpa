@@ -4,16 +4,37 @@
 }
 body{
   background-color: black;
-  color:white;
+  color:black;
+  background: linear-gradient(0.25turn, #3F87A6, #EBF8E1, #F69D3C );
+}
+
+#TitreContact {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a::before{
+  content: "==> ";
+  font-size: 1.2em;
+}
+
+a::after {
+  content: " <==";
+  font-size: 1.2em;
 }
 
 .formulaire {
-  width: 50%;
+  width: 80%;
   margin: auto;
 }
 
 form {
-  background: linear-gradient(0.25turn, #3F87A6, #EBF8E1, #F69D3C );
   padding: 1rem;
   color: black;
   text-align: center;
@@ -64,16 +85,18 @@ label {
 
 
 
-footer{
-  background-color: #1D1D1D;
-  text-align:center;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
+footer {
+  background-color: #1d1d1d;
+  text-align: right;
+  color: white;
+  padding: 1.1em;
+
+
+}
+footer p{
+  margin-right: 5%;
 }
 
-
-
-.form2 div{
-  display: inline;
+#champsObligatoire {
+  margin: 10%;
 }

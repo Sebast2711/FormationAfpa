@@ -3,78 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
     <link rel="stylesheet" href="CSS/contact.css">
+    <title>Formulaire de Contact</title>
+ 
   </head>
   <body>
 
-  <p><a href="index.html">Revenir a la page principale</a></p>
-  <h2 id="TitreContact" >Envoyez moi un message</h2>
 
-  <section class="formulaire">
-    <form class="" action="index.html" method="post">
 
-      <div class="champs radiobutton">
-        <div >
-          <input type="radio" name="choix" value="Monsieur" checked >
-          <label > Monsieur</label>
-        </div>
-        <div>
-            <input type="radio" name="choix" value="Madame">
-            <label > Madame</label>
-        </div>
-        <div>
-          <input type="radio" name="choix" value="Mademoiselle" >
-          <label > Mademoiselle</label>
+  
+    <div class="FullForm"> 
+      <div class="ImageForm">
+        <div class="image">
+
         </div>
       </div>
+      
+      <div class="Form">
+        
+        <form action="index.html" method="POST">
+          <input type="text" name="nom" id="nom" placeholder="Nom" required>
+          <input type="text" name="prenom" id="prenom" placeholder="Prenom" required>
+          <input type="email" name="mail" id="mail" placeholder="Adress Email" required>
+          <textarea name="message" id="message" placeholder="Message" required></textarea> 
+
+          <div class="bouttons">
+            <button type="submit" value="Validation" name="validation"> Validation </button>
+            <button type="reset" value="Annulation" name ="annulation"> Annulation </button>
+          </div>
+        </form>
 
 
-      <div class="champs">
-        <label class="obligatoire">Nom :</label>
-        <input class="champs2" type="text" name="Nom" value="" required placeholder="Nom"><br>
+
       </div>
 
-      <div class="champs">
-        <label class="obligatoire">Prenom :</label>
-        <input class="champs2" type="text" name="Prenom" value="" required placeholder="Prenom"><br>
-      </div>
-
-      <div class="champs">
-        <label> Date de naissance : </label>
-        <input class="ddn" type="date" name="datedenaissance">
-      </div>
-
-      <div class="champs">
-        <label class="obligatoire"> Adresse Mail :</label>
-        <input class="champs2" type="email" name="Email" autocomplete=""  required placeholder="Email"><br>
-      </div>
-
-      <div class="champs">
-        <label class="obligatoire"> Mot de passe :</label>
-        <input class="champs2" type="password" minlength="6" autocomplete="" name="mdp" placeholder="Mot de passe" required><br>
-      </div>
-
-      <div class="champs">
-        <label class="obligatoire"> Message :</label>
-        <textarea class="champs2" rows="3" name="Message" maxlength="150" required placeholder="Message"></textarea><br>
-      </div>
-
-
-      <div class="test">
-        <input class="bouton" type="submit" name="Validation" value="Validation">
-        <input class="bouton" type="reset" name="Annulation" value="Annulation">
-      </div>
-
-
-    </form>
-
-    <p id="champsObligatoire"> Les champs précédés de <span class="obligatoire"></span> sont des champs obligatoire </p>
-  </section>
-
-
-
-
+    </div>
 
 
     <footer>

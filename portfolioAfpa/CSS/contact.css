@@ -1,102 +1,114 @@
-*{
+
+/* General */
+* {
   margin: 0px;
   padding: 0px;
 }
-body{
-  background-color: black;
+
+html{
+  /* Height de 100% pour la couleur du fond */
+  height: 100%;
+}
+
+body {
   color:black;
-  background: linear-gradient(0.25turn, #3F87A6, #EBF8E1, #F69D3C );
-}
-
-#TitreContact {
-  text-align: center;
-}
-
-p {
-  text-align: center;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-a::before{
-  content: "==> ";
-  font-size: 1.2em;
-}
-
-a::after {
-  content: " <==";
-  font-size: 1.2em;
-}
-
-.formulaire {
-  width: 80%;
-  margin: auto;
-}
-
-form {
-  padding: 1rem;
-  color: black;
-  text-align: center;
-  text-shadow: 1px 1px grey;
-}
-
-.radiobutton div{
-  display: inline;
-}
-
-.champs {
-  margin: 1rem;
-}
-
-label {
-  margin: 20px;
-}
-
-.obligatoire::before {
-  content: "*  ";
-  color: red;
+  background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
 }
 
 
-.champs2, .ddn {
+
+
+/* Formulaire ENTIER*/
+.FullForm {
+  width: 50%;
+  height: 70vh;
+  margin: 5% auto;
+  display: table;
+
+  border-radius: 25px;
+  overflow: hidden;
+
+}
+
+
+/* Image du Formulaire */
+.ImageForm {
+  background: url("../IMG/form-photo-portrait.jpg") top   left/cover no-repeat;
+  position: relative;
+
+  width: 45%;
+  height: 100%;
+  display: table-cell;
+}
+
+
+/* Formulaire */
+.Form {
+  background-color: white ;
+  width: 100%;
+  display: table-cell;
   background-color: black;
-  border: none;
-  border-bottom: 1px solid white ;
-  color: white;
-}
-.champs2:hover, .ddn:hover{
-  border: 3px blue solid;
 }
 
-
-
-.bouton{
-  padding: 0.5rem;
-  border-radius: 15px;
-  width: auto ;
-  margin: 2rem;
+input, textarea {
+  border-style:hidden;
+  border-bottom: 1px #ccc solid;
+  color: #ccc;
+  background-color: black;
+  display: block;
+  margin: 2% auto;
+ 
+  width: 80%;
+  padding-top: 10%; 
 }
 
-.bouton:hover {
-  border: 1px white solid;
-  box-shadow: 0.5rem 0.5rem lightblue inset;
+input:focus{
+  outline: none;
+}
+
+.bouttons {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+} 
+
+button {  
+  width: 25%;
+  padding: 0.5em;
+  margin: 0.5em;
+  
+  border-style: none;
+  border-radius: 20px;
 }
 
 
 
+/* Pied de page */
 footer {
   background-color: #1d1d1d;
   text-align: right;
   color: white;
   padding: 1.1em;
-
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 
 }
 footer p{
   margin-right: 5%;
 }
 
-#champsObligatoire {
-  margin: 10%;
+
+@media all and (max-width: 767px){
+  .FullForm{
+    width: 90%;
+  }
+  .ImageForm{
+    display: table-row;
+  }
+  .Form{
+    display: table-row;
+  }
 }

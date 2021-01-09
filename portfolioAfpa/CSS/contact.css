@@ -3,6 +3,10 @@
 * {
   margin: 0px;
   padding: 0px;
+
+  font-family: "Roboto",sans-serif;
+  font-size: 15px;
+
 }
 
 html{
@@ -59,12 +63,26 @@ input, textarea {
   margin: 2% auto;
  
   width: 80%;
-  padding-top: 10%; 
+  padding-top: 10%;
+  padding-bottom: 10px; 
 }
 
 input:focus{
   outline: none;
 }
+
+input:hover{
+  border-bottom: red 1px solid;
+}
+
+textarea {
+  font-style: normal;
+}
+::placeholder {
+  font-style: normal;
+  font-size: 1em;
+}
+
 
 .bouttons {
   width: 100%;

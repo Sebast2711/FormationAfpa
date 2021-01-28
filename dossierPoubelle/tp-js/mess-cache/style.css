@@ -1,0 +1,22 @@
+button {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    margin: 5% auto;
+    padding: 2%;
+    border-radius: 25px;
+}
+
+div {
+    text-align: center;
+}
+
+.light-theme {
+    background-color: rgb(230, 230, 124);
+}
+.dark-theme {
+    background-color: navy;
+}
+.dark-themed-text {
+    color : white;
+}

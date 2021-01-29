@@ -152,9 +152,7 @@ de fonctions avec du padding pour la sortie en console
 *****************************************************/
 
 
-/*
 
-*/
 
 function creerEntete (argument1, argument2){
 
@@ -314,7 +312,6 @@ function showStudentByCourse (courses, students, coursesByStudent){
             }
         }    
 
-
         tableFinale (courseName, nameList);
     }
 }
@@ -361,6 +358,7 @@ Puis appelle la fonction choixMenu
 ********************************************************************/
 
 /********* Vieille facon de le faire **********/
+
 /* radios[i].onclick = function (){
      choixMenu (courses,students, coursesByStudent, this.value);
     }

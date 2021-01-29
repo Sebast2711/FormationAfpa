@@ -1,0 +1,118 @@
+/* Couleurs */
+/* Titre : rgb (216, 141,2) */
+/* Fond: rgb(29,28,28) */
+/* Bouton rgb(57,141,214) */
+/* fond form rgb (218,218,218) */
+/* couleur reussite rgb(0,107,0) */
+/* couleur plus grand rgb(216,116,116) */
+/* couleur plus petite rgb(231,175,71) */
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Rubik', serif;
+}
+
+body{
+    background-color: rgb(29,28,28) ;
+}
+
+
+/* Titre */
+h1 {
+    color: rgb(216,141,2);
+    text-decoration: overline underline rgb(216, 141,2);
+    border-radius: 50px ;
+    animation: flash 3s infinite;
+
+    
+    width: 40%;
+    margin: 1em auto;
+    padding: 10px;
+    text-align: center;
+
+    text-transform: uppercase ;
+}
+
+@keyframes flash {
+    0% {
+        box-shadow: 0px 0px 25px  rgb(216, 141,2);
+        box-shadow: 0px 0px 25px inset  rgb(216, 141,2);
+    }
+    50%{
+        box-shadow:none;
+    }
+    100%{
+        box-shadow: 0px 0px 25px rgb(216, 141,2);
+        box-shadow: 0px 0px 25px inset  rgb(216, 141,2);
+    }
+}
+
+
+/* Formulaire */
+
+form{
+    background-color: rgb(218,218,218) ;
+    width: 60%;
+    padding: 1em 0.5em 1em 1em;
+    margin: 1% auto;
+    border-radius: 20px;
+}
+
+input:focus, button:focus{
+    outline: none;
+}
+
+input[type = text]{
+    width: 70%;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+input[type = submit], button{
+    background-color: rgb(57,141,214);
+    color: white;
+
+    width: 10%;
+    padding: 1.5em 0px;
+    border-radius: 10px;
+    margin-left: 1em;
+}
+
+#statusTexte {
+    color: red;
+    margin: 1em 0px 0px 0px;
+}
+
+
+
+/* Reponses */
+h4{
+    color: white;
+    text-decoration: underline white;
+    text-align: center; 
+    margin-top: 3em;
+}
+
+.sousdiv{
+    width: 90%;
+    text-align: left;
+    margin: 2% 5%;
+    padding: 2em;
+
+    color: white;
+}
+
+.tropPetit{
+    background-color: rgb(231,175,71);
+}
+.tropGrand{
+    background-color: rgb(216,116,116);
+}
+.egal {
+    background-color: rgb(0,107,0);
+}
+/* couleur plus grand rgb(216,116,116) */
+/* couleur plus petite rgb(231,175,71) */

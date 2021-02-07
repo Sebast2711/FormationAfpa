@@ -13,10 +13,14 @@ header .brand {
 header .brand img {
     width: 5rem;
     height: 5rem;
+    cursor: pointer;
 }
+
 header .brand p {
     margin-left: 1em;
     font-size: 3em;
+    cursor: pointer;
+    
 }
 
 header nav {

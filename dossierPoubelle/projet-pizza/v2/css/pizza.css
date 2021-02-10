@@ -1,57 +1,27 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 62.5%;
-    padding: 0px;
-    margin: 0px;
-}
-
 .container {
-    background-color: #DFDFDF;
     padding-bottom: 8rem;
     padding-top: 2rem;
 }
 
-article {
-    display: block;
-    text-align: center;
-}
-
-.container button {
-    width: 25%;
-    margin: 2rem auto;
-}
-
-button:focus{
-    outline: none;
-}
-
-
-.resultatPizza{
-    width: 98%;
+#form-select-pizzas {
+    width: 70%;
     margin: 0px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.card{
-    margin: 2rem 0.5rem 0rem 0.5rem ;
     text-align: center;
-    background-color: white;
-    box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.3);
+    border: 1px solid black;
+    background-color: #ffffff;
+    font-size: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
-.card-image {
-    width: 100%;
-    height: 200px;
+#champs-nom {
+    width: 50%;
+    text-align: center;
+    margin: 10px auto;
 }
 
-.card-h3{
-    margin: 1em 0px;
-    font-size: 1.5rem;
-}
-
-.card-paragraphe {
-    margin: 3rem 0px 1.5rem 0px;
-    font-size: 1rem;
+#champs-prix-1, #champs-prix-2  {
+    width: 5em;
 }
 

@@ -1,11 +1,3 @@
-
-body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 62.5%;
-    padding: 0px;
-    margin: 0px;
-}
-
 .welcome {
     background:url("../images/fondPizza.jpg") no-repeat;
     background-size: cover;
@@ -24,7 +16,6 @@ body{
     align-items: center;
 }
 
-
 #texte-welcome {
     margin: 8rem 0px 10rem 0px;
 }
@@ -35,6 +26,7 @@ body{
     font-size: 2rem;
     text-shadow: 3px 3px 3px #524747 ;
 }
+
 
 
 button {
@@ -52,46 +44,10 @@ button:focus{
 }
 
 
-.container {
-    background-color: #DFDFDF;
-}
 
-article {
-    display: block;
-    text-align: center;
-}
 
 article button {
-    width: 25%;
     margin: 4em auto;
 }
 
-.resultatPizza {
-    width: 98%;
-    margin: 0px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.card{
-    margin: 2rem 0.5rem 0rem 0.5rem ;
-    text-align: center;
-    background-color: white;
-    box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.3);
-}
-
-.card-image {
-    width: 100%;
-    height: 200px;
-}
-
-.card-h3{
-    margin: 1em 0px;
-    font-size: 1.5rem;
-}
-
-.card-paragraphe {
-    margin: 3rem 0px 1.5rem 0px;
-    font-size: 1rem;
-}
 

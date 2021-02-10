@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="../css/footer-header.css">
     <link rel="stylesheet" href="../css/pizza.css">
+    <link rel="stylesheet" href="../css/pizzas.css">
 
     <title>Pizza Shop Liste des Pizzas</title>
 </head>
@@ -17,11 +20,13 @@
                 <img id="brand-logo" src="../images/logoPizza.png" alt="logo-pizzashop">
                 <p id="brand-p">PIZZA SHOP</p>
             </div>
-            <ul>
+            <i id="hamburger-icon" class="fas fa-bars"></i>
+            <ul class="menu">
                 <li><a href="../index.html"> ACCUEIL </a></li>
                 <li><a href="pizza.html"> NOS PIZZAS </a></li>
                 <li><a href="contact.html"> CONTACT </a></li>
             </ul>
+            
         </nav>
     </header>
 
@@ -29,6 +34,31 @@
 
 
     <div class="container">
+        <!-- Formulaire de selection des pizzas -->
+
+        <!-- <form id="form-select-pizzas">
+
+            <input id = "champs-nom" type="text" placeholder="NOM">
+
+            <label for="champs-select-ingredients"> INGREDIENTS</label>
+            <select id="champs-select-ingredients"></select>
+            <div id="champs-selected-ingredients">
+
+            </div>
+
+            <div id="champs-prix">
+                <label for="">Prix</label>
+                <input id="champs-prix-1" type="number" placeholder="de">
+                <input id="champs-prix-2" type="number" placeholder="à">
+            </div>
+
+            <label for="champs-vegetarienne"> Vegetarienne </label>
+            <input id="champs-vegetarienne" type="checkbox">        
+            
+            <label for="champs-disponible"> Disponible </label>
+            <input id="champs-disponible" type="checkbox">
+        </form>
+     -->
         <div class="resultatPizza">
         </div>
     </div>
@@ -40,11 +70,11 @@
             <li><a href="pizza.html"> NOS PIZZAS </a></li>
             <li><a href="contact.html"> CONTACT </a></li>
         </ul>
-
     </footer>
 
-    <script src="../js2/index.js"></script>
-    <script src="../js2/pizzaAll.js"></script>
+    <script src="../js/event.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/pizzaAll.js"></script>
 
     
 </body>

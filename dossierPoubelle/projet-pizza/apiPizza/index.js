@@ -17,35 +17,6 @@ class PizzaOff {
 
 let pizzas = [];
 
-function recupererPizzaEtPlacerDansTableau (){
-
-    let url = "https://fr.openfoodfacts.org/categorie/pizzas.json";
-
-    let req = new XMLHttpRequest();
-    req.open ('GET', url);
-    req.responseType = 'json';
-    req.send();
-
-    req.onload = () => {
-        if (req.readyState == XMLHttpRequest.DONE){
-            if (req.status == 200){
-                for (let i = 0; i < req.response.page_count; i++){
-                    let response = req.response;
-                    let productName = response.products[i].product_name_fr;
-                    let productImage = response.products[i].image_url;
-                    let productIngredients = response.products[i].ingredients_text_with_allergens_fr;
-
-                    let pizza = new PizzaOff(productName, productIngredients, productImage);
-                    pizzas.push(pizza) ;
-                }
-                showPizzas();
-            }
-        }
-    }   
-}
-
-
-recupererPizzaEtPlacerDansTableau();
 
 function showPizzas (){
     
@@ -78,3 +49,44 @@ function showPizzas (){
     }
 
 }
+
+
+function recupererPizzaEtPlacerDansTableau (){
+
+    let url = "https://fr.openfoodfacts.org/categorie/pizzas.json";
+
+    let req = new XMLHttpRequest();
+    req.open ('GET', url);
+    req.responseType = 'json';
+    req.send();
+
+    req.onload = () => {
+        if (req.readyState == XMLHttpRequest.DONE){
+            if (req.status == 200){
+                for (let i = 0; i < req.response.page_count; i++){
+                    let response = req.response;
+                    let productName = response.products[i].product_name_fr;
+                    let productImage = response.products[i].image_url;
+                    let productIngredients = response.products[i].ingredients_text_with_allergens_fr;
+
+                    let pizza = new PizzaOff(productName, productIngredients, productImage);
+                    pizzas.push(pizza) ;
+                }
+                showPizzas();
+            }
+        }
+    }   
+}
+
+
+recupererPizzaEtPlacerDansTableau();
+setInterval(() => {
+
+
+    let pizzaDOM =  document.querySelector('.resultatPizza');
+    pizzaDOM.innerHTML = "";
+    
+    recupererPizzaEtPlacerDansTableau();
+    console.log ("refresh de l'api");
+    
+}, 600000);

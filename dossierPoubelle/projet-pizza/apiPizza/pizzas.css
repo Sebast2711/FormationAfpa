@@ -27,3 +27,31 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+span {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+@media (min-width: 1200px){
+    .resultatPizza{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width:768px){
+
+    header ul {
+        display: none;
+    }
+    header nav {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:500px){
+    .resultatPizza{
+        grid-template-columns: 1fr;
+    }
+}
+

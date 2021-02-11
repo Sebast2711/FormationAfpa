@@ -1,0 +1,29 @@
+
+.card{
+    margin: 2rem 0.5rem 0rem 0.5rem ;
+    text-align: center;
+    background-color: white;
+    box-shadow: 3px 3px 7px 2px rgba(0,0,0,0.3);
+}
+
+.card-image {
+    width: 100%;
+    height: 400px;
+}
+
+.card-h3{
+    margin: 1em 0px;
+    font-size: 1.5rem;
+}
+
+.card-paragraphe {
+    margin: 3rem 0px 1.5rem 0px;
+    font-size: 1rem;
+}
+
+.resultatPizza{
+    width: 98%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

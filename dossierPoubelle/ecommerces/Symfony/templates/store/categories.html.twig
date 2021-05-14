@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Mon Ecommerce : Les Catégories {% endblock %}
+
+{% block body %}
+
+    <h1 class = "text-center my-4">Catégories ({{categories | length}})</h1>
+
+    <div class = "text-center">
+        <a href = "{{path("addCategory")}}" class="btn btn-block btn-outline-success">Ajouter une categorie</a>
+    </div>
+    
+
+    {% for category in categories %}
+        <div class="row my-5">
+            <div class="col-3">
+                <h4>{{category.name}}</h4>
+            </div>
+            <div class="col-9">
+                {{category.description}}
+            </div>
+            <div class = "text-center w-100">
+                <a href = "{{path("updateCategory", {id:category.id})}}" class="btn btn-outline-warning">Modifier</a>
+                <a href = "{{path("removeCategory", {id:category.id})}}" class="btn btn-outline-danger">Suprimer</a>
+            </div>
+        </div>
+
+    {% endfor %}
+
+
+
+{% endblock %}

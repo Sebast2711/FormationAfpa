@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {# Display error messgaes #}
+    {% for message in app.flashes('error') %}   
+            
+                    <div class="alert alert-danger fade show" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        {{message}}
+                    </div>
+
+    {% endfor %}
+
+
+
+
+
+    <h1 class = "text-center my-4">Produits ({{products|length}})</h1>
+
+    {% if is_granted('ROLE_ADMIN') %}
+        <div class = "text-center">
+            <a href = "{{path('addProduct')}}" class="btn btn-outline-success">Ajouter un produit</a>
+        </div>
+    {% endif %}
+
+    
+       
+    <div>
+        {% for product in products %}
+            <h4>{{product.name}} </h4> 
+            <img src="{{product.image}}" alt="{{product.image}}">
+            
+            <p>
+                Reférence : <b>{{product.reference}}</b> 
+
+                {# If the category is null then do not show the name of the category #}
+                {% if  product.category %}
+                    Catégorie : <b>{{product.category.name}}</b>
+                {% endif %}
+            </p>
+
+            <p>{{product.description}}</p>
+            <p>Prix : <b>{{product.price}}</b> Quantité disponible : <b>{{product.quantity}}</b></p>
+
+            {% if is_granted('ROLE_ADMIN') %}
+                <div class="text-center w-100">
+                    <a href = "{{path("updateProduct", {id:product.id}) }}" class="btn btn-outline-warning">Modifier</a>
+                    <a href = "{{path("removeProduct", {id:product.id})}}" class="btn btn-outline-danger">Suprimer</a>
+                </div>
+                {% else %}
+                <a href="{{path('addToCart', {id:product.id})}}" class ="btn btn-outline-success">Ajouter le produit au panier</a>
+            {% endif %}
+
+
+            <hr style="height:2px;background-color:gray">
+        {% endfor %}
+    
+    </div>
+
+
+{% endblock %}

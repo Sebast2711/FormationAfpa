@@ -1,0 +1,43 @@
+{{ form_start(form) }}
+
+
+       {{ form_row(form.firstname, {
+                'label' : "Prénom", 
+                'attr' : {
+                    'placeholder' : 'Prénom'
+                }
+            }) 
+        }}
+        {{ form_row(form.lastname, {
+                'label' : "Nom de famille", 
+                'attr' : {
+                    'placeholder' : 'Nom de famille'
+                }
+            }) 
+        }}
+        {{ form_row(form.email, {
+                'label' : "Email", 
+                'attr' : {
+                    'placeholder' : 'exemple@email.fr'
+                }
+            }) 
+        }}
+    {{ form_row(form.password) }}    
+    {{ form_row(form.confirm) }}
+    {{ form_row(form.roles) }}
+
+
+
+
+
+
+
+
+    {% if button_label == 'Ajouter' %}
+        <button class="btn btn-outline-success">Ajouter</button>
+    {% endif %}
+    {% if button_label == 'Modifier' %}
+        <button class="btn btn-outline-warning">Modifier</button>
+    {% endif %}
+
+{{ form_end(form) }}

@@ -1,0 +1,41 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+    <h2>
+        {% if mode %}
+            Modification de la catégorie         
+        {% else %}
+            Création d'une catégorie
+        {% endif %}
+    </h2>
+        
+    {{ form_start(formCategory) }}
+
+    {{ form_row(formCategory.name ,{
+        "attr": {
+                "placeholder":"Nom de la catégorie"
+            },
+        "label" : "Nom de la catégorie"
+        }) 
+    }}
+    {{ form_row(formCategory.description,{
+        "attr": {
+                "placeholder":"Description de la catégorie"
+            },
+        "label" : "Description de la catégorie"
+        })  
+    }}
+
+    <button type="submit" class ="btn btn-success">
+        {% if mode %}
+            Modifier la catégorie
+        {% else %}
+            Ajouter une nouvelle catégorie            
+        {% endif %}
+    </button>
+
+    {{ form_end(formCategory) }}
+
+
+{% endblock %}

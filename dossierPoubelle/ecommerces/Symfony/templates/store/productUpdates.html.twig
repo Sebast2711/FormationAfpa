@@ -1,0 +1,76 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+        
+    <h2>
+        {% if mode %}
+            Modification du produit         
+        {% else %}
+            Création d'un produit
+        {% endif %}
+    </h2>
+        
+
+
+    {{ form_start(formProduct) }}
+
+        {{ form_row(formProduct.name,{
+            "attr": {
+                    "placeholder":"Nom du produit"
+                },
+            "label" : "Nom du produit"
+            }) 
+        }}
+
+        {{ form_row(formProduct.description,{
+            "attr": {
+                    "placeholder":"Description du produit"
+                },
+            "label" : "Description du produit"
+            }) 
+        }}
+
+        {{ form_row(formProduct.price,{
+            "attr": {
+                    "placeholder":"Prix du produit"
+                },
+            "label" : "Prix du produit"
+            }) 
+        }}
+
+        {{ form_row(formProduct.quantity,{
+            "attr": {
+                    "placeholder":"Quantité du produit"
+                },
+            "label" : "Quantité du produit"
+            }) 
+        }}
+
+        {{ form_row(formProduct.image,{
+            "attr": {
+                    "placeholder":"Image du produit"
+                },
+            "label" : "Image du produit"
+            }) 
+        }}
+
+        {{ form_row(formProduct.category,{
+            "label" : "Catégorie du produit"
+            }) 
+        }}
+
+
+   
+        <button type="submit" class ="btn btn-success">
+            {% if mode %}
+                Modifier le produit
+            {% else %}
+                Ajouter une nouveaux produit            
+            {% endif %}
+        </button>
+
+
+
+    {{ form_end(formProduct) }}
+
+{% endblock %}

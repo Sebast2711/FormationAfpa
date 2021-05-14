@@ -1,0 +1,67 @@
+/* A FAIRE PENDANT L'EXERCICE */
+/* Terminer le style pour le titre */
+/* Terminer le style pour le bouton */
+/* Ajouter Effet lumineux sur le bouton */
+/* Ajouter animation du bouton sur click */
+
+html {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(45deg, #5bb05b, #4085b4, #7b40b4);
+    background-size: 150% 150%;
+    animation: anim-back 10s ease infinite;
+}
+
+#title {
+    font-size: 10em;
+    font-family: 'Tangerine', cursive;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    margin: auto;
+    animation: typing 2s steps(10, end);
+    
+    /* A COMPLETER */
+    color: white;
+    
+}
+
+#btnStart {
+    width: 300px;
+    height: 100px;
+    font-family: 'Tangerine', cursive;
+    font-size: 4em;
+    font-weight: bold;
+
+    /* A COMPLETER */
+    transition: box-shadow 0.3s;
+    display: block;
+    margin: 10% auto;
+    border-radius: 25px;
+}
+
+#btnStart:focus{
+    outline: none;
+}
+
+#btnStart:hover {
+    box-shadow: 0 0 100px yellow; 
+}
+
+/* Animation du gradient sur le fond d'écran */
+@keyframes anim-back {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+
+
+/* Animation pour l'apparition du titre */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}

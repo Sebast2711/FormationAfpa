@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du nombre magique en plus beau </title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    
+    <!-- Titre de la page -->
+    <h1>Le nombre magique</h1>
+    <form id="formNbrMag">
+        <input id ="texte" type="text" placeholder="Entrez un nombre entre 1 et 10" tabindex = "-1" autocomplete="off">
+        <input id ="submit" type="submit" value="Tester!" tabindex="1">
+        <button id="reset"> RAZ </button>
+    
+    
+        <p id ="statusTexte"></p>
+
+
+    </form>
+
+
+    <h4> Mes reponses </h4>
+
+    <!-- Div qui affiche le resultat de l'utilisateur -->
+    <div id="reponseUtilisateur">
+
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
